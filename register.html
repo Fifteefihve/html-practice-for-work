@@ -1,0 +1,96 @@
+<h1> Register Account </h1>
+<!doctype html>
+<title>Register Account</title>
+<html lang="en">
+  <head>
+    <style>
+      h1 
+      { 
+        background-color: blue;
+        color: white;
+      }
+      p
+      {
+    	  text-align: center; 
+    	  color: blue;
+      }
+    </style>
+  </head>
+
+  <form>
+    <p> 
+      <label for="emai">Email:
+        <input type="email" name="vname"> 
+      </label>
+    </p>
+      
+    <p> 
+      <label for="password">Password: 
+        <input type="password" name="zname" minlength=3>
+      </label>
+    </p>
+
+    <p> 
+      <label for="name">Name: 
+        <input id="name" name="zname"> 
+      </label>
+    </p>
+
+    <p> 
+      <label for="surname">Surname: 
+        <input id="surname" name="zname">
+      </label>
+    </p>
+
+    <p> 
+      <label for="male">male
+        <input type="radio" id="männl" name="geschlecht" value="0">
+      </label>
+      <label for="female">female
+        <input type="radio" id="female" name="gender" value="1">
+      </label>
+    </p>
+
+    <p>
+       <label for="age">over 18 years old:
+          <input type="checkbox" id="age" name="age">
+       </label>
+    </p>
+
+<search>
+  <form action="search.php">
+    <p> 
+      <label for="query">Country of origin:
+        <input id="query" name="q" type="search" list="Country">
+      </label>
+    </p>
+       
+    <p> 
+      <label>Phone number: 
+        <input type="tel" name="MobileNumber" placeholder="1 800..."> 
+      </label>
+    </p>
+    
+    <p>
+      <input type="submit" value="Register">
+    </p>
+  </form>
+</search>
+
+<!-- Country selection -->
+  <datalist id="Country">
+    <option value="United States of America">
+    <option value="Canada">
+    <option value="Mexico">
+    <option value="Germany"> 
+    <option value="Austria"> 
+    <option value="Schwitzerland"> 
+    <option value="France"> 
+    <option value="Czech Republic"> 
+    <option value="Poland"> 
+    <option value="Denmark">
+    <option value="Belgium"> 
+    <option value="Netherlands"> 
+    <option value="Russia"> 
+  </datalist>
+<!-- Country selection -->
