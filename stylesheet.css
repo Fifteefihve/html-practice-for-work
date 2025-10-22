@@ -1,23 +1,37 @@
-h1 
-{ 
-  background-color: blue;
-  color: white;
-  text-align: center;
-  padding: 7px;
+h1 {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    padding: 7px;
 
 }
-p
-{
-    text-align: center; 
+
+p {
+    text-align: center;
     color: blue;
 }
-td 
-{
+
+td {
     color: blue;
     vertical-align: top;
 }
-table
-{
+
+table {
     margin: 0 auto;
     border-spacing: 15px;
+}
+
+label {
+    margin-right: 1rem;
+}
+
+.banner {
+    width: 100%;
+    background-color: blue;
+    color: white;
+    text-align: center;
+}
+
+.banner span {
+    font-size: 3rem;
 }

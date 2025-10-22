@@ -1,72 +1,77 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <title>Register Account</title>
   <link rel="stylesheet" href="stylesheet.css">
 </head>
+
 <body>
-  <h1>Register Account</h1>
+  <div class="banner">
+    <span>Register Account</span>
+  </div>
   <form>
     <table>
-        <tr>
-          <td><label for="email">Email:</label></td>
-          <td><input type="email" name="vname" id="email"></td>
-        </tr>
-        <tr>
-          <td><label for="password">Password:</label></td>
-          <td><input type="password" name="zname" id="password" minlength="3"></td>
-        </tr>
-        <tr>
-          <td><label for="name">Name:</label></td>
-          <td><input id="name" name="zname"></td>
-        </tr>
-        <tr>
-          <td><label for="surname">Surname:</label></td>
-          <td><input id="surname" name="zname"></td>
-        </tr>
-        <tr>
-          <td>Gender:</td>
-          <td>
-            <label for="male">Male</label>
-            <input type="radio" id="male" name="gender" value="0">
-            <label for="female">Female</label>
-            <input type="radio" id="female" name="gender" value="1">
-          </td>
-        </tr>
-        <tr>
-          <td><label for="age">Adult:</label></td>
-          <td><input type="checkbox" id="age" name="age"></td>
-        </tr>
-        <tr>
-          <td><label for="query">Country of origin:</label></td>
-          <td><input id="query" name="q" type="search" list="Country"></td>
-        </tr>
-        <tr>
-          <td><label for="MobileNumber">Phone number:</label></td>
-          <td><input type="tel" name="MobileNumber" placeholder="1 800..."></td>
-        </tr>
-        <tr>
-          <td colspan="2"><input type="submit" value="Register"></td>
-        </tr>
+      <tr>
+        <td><label for="email">Email:</label></td>
+        <td><input type="email" name="vname" id="email"></td>
+      </tr>
+      <tr>
+        <td><label for="password">Password:</label></td>
+        <td><input type="password" name="zname" id="password" minlength="3"></td>
+      </tr>
+      <tr>
+        <td><label for="name">Name:</label></td>
+        <td><input id="name" name="zname"></td>
+      </tr>
+      <tr>
+        <td><label for="surname">Surname:</label></td>
+        <td><input id="surname" name="zname"></td>
+      </tr>
+      <tr>
+        <td>Gender:</td>
+        <td>
+          <label for="male">Male</label>
+          <input type="radio" id="male" name="gender" value="0">
+          <label for="female">Female</label>
+          <input type="radio" id="female" name="gender" value="1">
+        </td>
+      </tr>
+      <tr>
+        <td><label for="age">Adult:</label></td>
+        <td><input type="checkbox" id="age" name="age"></td>
+      </tr>
+      <tr>
+        <td><label for="query">Country of origin:</label></td>
+        <td><input id="query" name="q" type="search" list="Country"></td>
+      </tr>
+      <tr>
+        <td><label for="MobileNumber">Phone number:</label></td>
+        <td><input type="tel" name="MobileNumber" placeholder="1 800..."></td>
+      </tr>
+      <tr>
+        <td colspan="2"><input type="submit" value="Register"></td>
+      </tr>
     </table>
   </form>
 </body>
+
 </html>
 
 <!-- Country selection -->
-  <datalist id="Country">
-    <option value="United States of America">
-    <option value="Canada">
-    <option value="Mexico">
-    <option value="Germany"> 
-    <option value="Austria"> 
-    <option value="Switzerland"> 
-    <option value="France"> 
-    <option value="Czech Republic"> 
-    <option value="Poland"> 
-    <option value="Denmark">
-    <option value="Belgium"> 
-    <option value="Netherlands"> 
-    <option value="Russia"> 
-  </datalist>
+<datalist id="Country">
+  <option value="United States of America">
+  <option value="Canada">
+  <option value="Mexico">
+  <option value="Germany">
+  <option value="Austria">
+  <option value="Switzerland">
+  <option value="France">
+  <option value="Czech Republic">
+  <option value="Poland">
+  <option value="Denmark">
+  <option value="Belgium">
+  <option value="Netherlands">
+  <option value="Russia">
+</datalist>
 <!-- Country selection -->

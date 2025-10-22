@@ -1,37 +1,53 @@
 <!doctype html>
 <title>Guest Book</title>
 <html lang="en">
-  <head>
-    <link rel="stylesheet" href="stylesheet.css">
-    <meta charset="UTF-8">
-    <h1> Guest Book </h1>
-    <h2 style="text-align: center;"> Welcome </h2>
-  </head>
-  <body>
-    <p style="text-align: right;" >
-      <img src="img/UserIcon.svg" width="80px" height="80px">
-    </p>
 
-    <p style="text-align: right;" >
-      <label> View Account </label>
-    </p>
+<head>
+  <link rel="stylesheet" href="stylesheet.css">
+  <meta charset="UTF-8">
+</head>
 
-    <p style="text-align: center;">
-      <li><a href="post.html">Create Post</a></li>
-      <li><a href="register.html">Create Account</a></li>
-    </p>
+<body>
+  <div class="banner">
+    <span>Guest Book</span>
+  </div>
+  <h2 style="text-align: center;"> Welcome </h2>
+  <p style="text-align: right;">
+    <img src="img/UserIcon.svg" width="80px" height="80px">
+  </p>
 
-    <p style="text-align: center;">
-      <canvas id="myCanvas" width="800" height="300" style="border:2px solid black"></canvas>
-    </p>
+  <p style="text-align: right;">
+    <label> View Account </label>
+  </p>
 
-    <p style="text-align: center;">
-      <canvas id="myCanvas" width="800" height="300" style="border:2px solid black"></canvas>
-    </p>
+  <div>
+    <span style="align-content: right;">
+      <a href="post.html">Create Post</a>
+    </span>
+  </div>
 
-    <p style="text-align: center;">
-      <canvas id="myCanvas" width="800" height="300" style="border:2px solid black"></canvas>
-    </p>
+  <div>
+    <span style="align-content: right;">
+      <a href="register.html">Register Account</a>
+    </span>
+  </div>
 
-  </body>
+  <div>
+    <span style="text-align: center;">
+      <p>
+        <canvas id="myCanvas" width="800" height="300" style="border:2px solid black"></canvas>
+      </p>
+
+      <p>
+        <canvas id="myCanvas" width="800" height="300" style="border:2px solid black"></canvas>
+      </p>
+
+      <p>
+        <canvas id="myCanvas" width="800" height="300" style="border:2px solid black"></canvas>
+      </p>
+    </span>
+  </div>
+
+</body>
+
 </html>

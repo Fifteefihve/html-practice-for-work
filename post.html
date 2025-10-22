@@ -1,47 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <link rel="stylesheet" href="stylesheet.css">
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Send Message</title>
   <style>
-    label
-    {
+    * {
+      font-family: sans-serif;
+    }
+
+    .center {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    .header {
+      width: 98%;
+      background-color: blue;
+      color: white;
+      text-align: Center;
+    }
+
+
+    .flexCol {
+      display: flex;
+      flex-direction: column;
+      resize: none;
+    }
+
+    label {
       font-weight: bold;
       color: blue;
     }
-    textarea
-    {
-      resize: none;
-      width: 100%;
-      max-width: 600px;
+
+    .textBoxSection {
+      display: flex;
+      flex-direction: column;
+      width: fit-content;
+
+      gap: 1rem;
     }
-    input[type="text"]
-    {
+
+    .footer {
+      display: flex;
+      justify-content: space-between;
+
       width: 100%;
-      max-width: 600px;
+    }
+
+    .hint {
+      color: oklch(0.6 0 0);
+    }
+
+    .sendButton {
+      width: 8rem;
+    }
+
+    .redText {
+      color: red;
+    }
+
+    .textarea {
+      resize: none;
     }
   </style>
 </head>
+
 <body>
+  <div class="center">
+    <div class="banner">
+      <span>Send Message</span>
+    </div>
+    <div class="textBoxSection">
+      <div class="flexCol">
+        <label for="username">Username</label>
+        <input type="text" id="username" />
+      </div>
 
-  <h1>Send Message</h1>
+      <div class="flexCol">
+        <label for="message">Message</label>
+        <textarea class="textarea" name="message" id="textarea" cols="50" rows="10" maxlength="500"></textarea>
+      </div>
+      <div class="footer">
+        <button class="sendButton" id="sendButton">Send</button>
+        <span class="hint" id="charcount">0/5000</span>
+      </div>
+    </div>
+  </div>
 
-  <form>
-    <table>
-      <tr>
-        <td>Sender:</td>
-        <td style="width: 500px;"><input type="text" id="name" name="zname" required ></td>
-      </tr>            
-      <tr>
-        <td>Message:</td>
-        <td>
-          <textarea id="message" name="message" rows="12" maxlength="5000" required></textarea>
-          <p style="color: gray; font-size: small;">Max 5000 characters</p>
-        </td>
-      </tr>
-    </table>
-  </form>
+  <script src="characterscript.js"></script>
 
-</body>
 </html>
