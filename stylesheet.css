@@ -1,37 +1,51 @@
-h1 {
-    background-color: blue;
-    color: white;
-    text-align: center;
-    padding: 7px;
-
+:root {
+    --color-primary: oklch(1 0 0);
+    --color-secondary: oklch(.98 0 0);
+    --color-mute: oklch(.7 0 0);
 }
 
-p {
-    text-align: center;
-    color: blue;
+html, body {
+    background-color: var(--color-secondary);
 }
 
-td {
-    color: blue;
-    vertical-align: top;
+* {
+    font-family: sans-serif;
 }
 
-table {
-    margin: 0 auto;
-    border-spacing: 15px;
-}
-
-label {
-    margin-right: 1rem;
-}
-
-.banner {
+.titleBanner {
     width: 100%;
+    text-align: center;
     background-color: blue;
     color: white;
-    text-align: center;
+    padding: 1rem 0;
 }
 
-.banner span {
-    font-size: 3rem;
+.feed {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 2rem;
 }
+.card {
+    background-color: var(--color-primary);
+    padding: 1rem;
+    width: 20rem;
+
+    border-radius: 11px;
+    box-shadow: 5px 4px 16px 1px black;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: .5rem;
+    margin-bottom: .2rem;
+  }
+
+  .footer * {
+    font-size: small;
+    color: var(--color-mute)
+  }
+  

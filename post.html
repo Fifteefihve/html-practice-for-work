@@ -2,10 +2,10 @@
 <html lang="en">
 
 <head>
-  <link rel="stylesheet" href="stylesheet.css">
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Send Message</title>
+  <link rel="stylesheet" href="stylesheet.css" />
+  <title>Post</title>
   <style>
     * {
       font-family: sans-serif;
@@ -20,17 +20,15 @@
     }
 
     .header {
-      width: 98%;
+      width: 100%;
       background-color: blue;
       color: white;
       text-align: Center;
     }
 
-
     .flexCol {
       display: flex;
       flex-direction: column;
-      resize: none;
     }
 
     label {
@@ -64,17 +62,13 @@
     .redText {
       color: red;
     }
-
-    .textarea {
-      resize: none;
-    }
   </style>
 </head>
 
 <body>
   <div class="center">
-    <div class="banner">
-      <span>Send Message</span>
+    <div class="header">
+      <h2>Send Message</h2>
     </div>
     <div class="textBoxSection">
       <div class="flexCol">
@@ -84,15 +78,19 @@
 
       <div class="flexCol">
         <label for="message">Message</label>
-        <textarea class="textarea" name="message" id="textarea" cols="50" rows="10" maxlength="500"></textarea>
+        <textarea name="message" id="textarea" cols="50" rows="10" maxlength="500"></textarea>
       </div>
       <div class="footer">
         <button class="sendButton" id="sendButton">Send</button>
         <span class="hint" id="charcount">0/5000</span>
       </div>
+      <span>
+        <a href="mainpage.html">Back to mainpage</a>
+      </span>
     </div>
   </div>
 
-  <script src="characterscript.js"></script>
+  <script src="postscript.js"> </script>
+</body>
 
 </html>
