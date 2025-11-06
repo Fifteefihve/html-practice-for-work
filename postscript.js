@@ -4,6 +4,7 @@ const usernameInputElement = document.getElementById("username");
 const sendButtonElement = document.getElementById("sendButton");
 
 const MAX_CHAR_COUNT = 500;
+const MAX_POST_COUNT = 10;
 
 textareaElement.addEventListener("input", (ev) => {
   console.log(ev.target.value);
@@ -20,7 +21,7 @@ function pushPostToLocalstorage(post) {
   let posts = JSON.parse(localStorage.getItem("posts") || "[]");
 
   posts.unshift(post);
-  if (posts.length > 3) posts.pop()
+  if (posts.length > MAX_POST_COUNT) posts.pop()
 
   localStorage.setItem("posts", JSON.stringify(posts));
 }
@@ -38,6 +39,11 @@ function handleButtonClick(ev) {
   };
 
   pushPostToLocalstorage(postData);
+
+  usernameInputElement.value = "";
+  textareaElement.value = "";
+
+  window.location.href = "http://127.0.0.1:5500/mainpage.html";
 }
 
 sendButtonElement.addEventListener("click", handleButtonClick);

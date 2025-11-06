@@ -8,27 +8,62 @@
   <link rel="stylesheet" href="stylesheet.css" />
 </head>
 
-<body">
+<body>
   <h1 class="titleBanner">View Posts</h1>
 
-  <div class="createlist">
-    <span>
-      <a href="post.html">Create Post</a>
-    </span>
-  </div>
-  <div class="createlist">
-    <span>
-      <a href="register.html">Register Account</a>
-    </span>
+  <div class="accountsettings">
+    <div>
+      <span>
+        <a href="post.html">Create Post</a>
+      </span>
+    </div>
+    <div>
+      <span>
+        <a href="register.html">Register Account</a>
+      </span>
+    </div>
+    <div class="accountbutton">
+      <div>
+        <span><img src="/img/UserIcon.svg" style="width:50px;height:50px;"></span>
+      </div>
+      <div>
+        <span>
+          <a>Account</a>
+        </span>
+      </div>
+    </div>
   </div>
 
-  <div class="message">
-    <slot name="message">N/A</slot>
-  </div>
 
   <div class="feed" id="postList"></div>
 
   <template id="post-template">
+    <style>
+      .card {
+        background-color: var(--color-primary);
+        padding: 1rem;
+        width: 20rem;
+        border-radius: 11px;
+        box-shadow: 5px 4px 16px 1px black;
+      }
+
+      .header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: .5rem;
+        margin-bottom: .2rem;
+      }
+
+      .message {
+        overflow-wrap: break-word;
+      }
+
+      .footer * {
+        font-size: small;
+        color: var(--color-mute);
+      }
+    </style>
     <div class="card">
       <div class="header">
         <span class="avatar">
@@ -41,6 +76,10 @@
           <slot name="username">Guest</slot>
         </span>
       </div>
+      <div class="message">
+        <slot name="message">N/A</slot>
+      </div>
+
       <p style="text-align: right;">
         <label> View Account </label>
       </p>
@@ -52,7 +91,7 @@
   </template>
 
   <script src="script.js"></script>
-  <script src="customElements.js"></script>
+  <script src="posttemplate.js"></script>
 </body>
 
 </html>

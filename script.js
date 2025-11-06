@@ -1,7 +1,6 @@
 function showPosts() {
     const postListElement = document.getElementById("postList");
     const posts = JSON.parse(localStorage.getItem("posts") || "[]");
-
     if (posts.length === 0) return;
 
     for (let i = 0; i < posts.length; i++) {

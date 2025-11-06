@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Register Account</title>
   <link rel="stylesheet" href="stylesheet.css" />
 </head>
@@ -10,54 +12,50 @@
   <div class="banner">
     <span>Register Account</span>
   </div>
-  <form>
-    <table>
-      <tr>
-        <td><label for="email">Email:</label></td>
-        <td><input type="email" name="vname" id="email"></td>
-      </tr>
-      <tr>
-        <td><label for="password">Password:</label></td>
-        <td><input type="password" name="zname" id="password" minlength="3"></td>
-      </tr>
-      <tr>
-        <td><label for="name">Name:</label></td>
-        <td><input id="name" name="zname"></td>
-      </tr>
-      <tr>
-        <td><label for="surname">Surname:</label></td>
-        <td><input id="surname" name="zname"></td>
-      </tr>
-      <tr>
-        <td>Gender:</td>
-        <td>
-          <label for="male">Male</label>
-          <input type="radio" id="male" name="gender" value="0">
-          <label for="female">Female</label>
-          <input type="radio" id="female" name="gender" value="1">
-        </td>
-      </tr>
-      <tr>
-        <td><label for="age">Adult:</label></td>
-        <td><input type="checkbox" id="age" name="age"></td>
-      </tr>
-      <tr>
-        <td><label for="query">Country of origin:</label></td>
-        <td><input id="query" name="q" type="search" list="Country"></td>
-      </tr>
-      <tr>
-        <td><label for="MobileNumber">Phone number:</label></td>
-        <td><input type="tel" name="MobileNumber" placeholder="1 800..."></td>
-      </tr>
-      <tr>
-        <td colspan="2"><input type="submit" value="Register"></td>
-      </tr>
-      
-    </table>
-    <span>
-      <a href="mainpage.html">Back to mainpage</a>
-    </span>
-  </form>
+  <a href="mainpage.html">Back to mainpage</a>
+  <div class="center">
+    <form class="regform" action="/mainpage.html">
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" name="vname" id="email" required>
+      </div>
+      <div>
+        <label for="password">Password:</label>
+        <input type="password" name="zname" id="password" minlength="3" required>
+      </div>
+      <div>
+        <label for="name">Name:</label>
+        <input id="name" name="zname" required>
+      </div>
+      <div>
+        <label for="surname">Surname:</label required>
+        <input id="surname" name="zname">
+      </div>
+      <div>
+        <label> Gender: </label>
+        <label for="male">Male</label>
+        <input type="radio" id="male" name="gender" value="0" required>
+        <label for="female">Female</label>
+        <input type="radio" id="female" name="gender" value="1" required>
+      </div>
+      <div>
+        <label for="age">Adult:</label>
+        <input type="checkbox" id="age" name="age" required>
+      </div>
+      <div>
+        <label for="query">Country of origin:</label>
+        <input id="query" name="q" type="search" list="Country" required>
+      </div>
+      <div>
+        <label for="MobileNumber">Phone number:</label>
+        <input type="tel" name="MobileNumber" placeholder="1 800...">
+      </div>
+      <div>
+        <input type="submit" value="Register">
+      </div>
+    </form>
+  </div>
+
 </body>
 
 </html>
