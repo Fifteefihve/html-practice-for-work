@@ -3,7 +3,7 @@ const textareaElement = document.getElementById("textarea");
 const usernameInputElement = document.getElementById("username");
 const sendButtonElement = document.getElementById("sendButton");
 
-const MAX_CHAR_COUNT = 500;
+const MAX_CHAR_COUNT = 5000;
 const MAX_POST_COUNT = 10;
 
 textareaElement.addEventListener("input", (ev) => {
@@ -43,7 +43,7 @@ function handleButtonClick(ev) {
   usernameInputElement.value = "";
   textareaElement.value = "";
 
-  window.location.href = "http://127.0.0.1:5500/mainpage.html";
+  window.location.href = "mainpage.html";
 }
 
 sendButtonElement.addEventListener("click", handleButtonClick);
