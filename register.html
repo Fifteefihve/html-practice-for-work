@@ -12,7 +12,7 @@
   <h1 class="titleBanner">Register Account</h1>
   <img src="img/Back.svg" style="width:50px;height:50px;" onclick="PageReturn();" />
   <div class="center">
-    <form class="regform" action="/mainpage.html">
+    <form class="regform">
       <div>
         <label for="email">Email:</label>
         <input type="email" name="vname" id="email" required>
@@ -31,28 +31,29 @@
       </div>
       <div>
         <label> Gender: </label>
-        <label for="male">Male</label>
+        <label for="male">Female,</label>
         <input type="radio" id="male" name="gender" value="0" required>
-        <label for="female">Female</label>
+        <label for="female">Male</label>
         <input type="radio" id="female" name="gender" value="1" required>
       </div>
       <div>
         <label for="age">Adult:</label>
-        <input type="checkbox" id="age" name="age" required>
+        <input type="checkbox" id="adult" name="age">
       </div>
       <div>
         <label for="query">Country of origin:</label>
-        <input id="query" name="q" type="search" list="Country" required>
+        <input id="country" name="q" type="search" list="Country" required>
       </div>
       <div>
         <label for="MobileNumber">Phone number:</label>
-        <input type="tel" name="MobileNumber" placeholder="1 800...">
+        <input id="number" type="tel" name="MobileNumber" placeholder="1 800...">
       </div>
       <div>
-        <input type="submit" value="Register">
+        <input id="register" type="submit" value="Register">
       </div>
     </form>
     <script src="postscript.js"> </script>
+    <script src="loginpage.js"> </script>
   </div>
 
 </body>

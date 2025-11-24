@@ -50,4 +50,8 @@ function PageReturn() {
   window.location.href = "mainpage.html";
 }
 
+function goToLogin() {
+  window.location.href = "loginpage.html";
+}
+
 sendButtonElement.addEventListener("click", handleButtonClick);
